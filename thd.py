@@ -129,6 +129,7 @@ live_window.ax.xaxis.set_major_formatter(XAxis_Formatter)
 plt.xlabel('frequency')
 plt.ylabel(r'Signal strength   $dB_{V_{rms}}$')
 plt.ylim(-120,40)
+plt.xlim(0,max_f)
 
 # Start acquisition
 live_sds.start()
